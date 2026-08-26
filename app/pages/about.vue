@@ -104,8 +104,6 @@ const values = [
   font-weight: 600;
 }
 
-  .nav a {
-
 .hero-card {
   background: linear-gradient(135deg, #ebfff5, #dff7ed);
   border: 1px solid rgba(20, 96, 72, 0.08);

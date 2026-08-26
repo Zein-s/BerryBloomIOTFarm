@@ -40,16 +40,16 @@ const testimonials = [
 
 const team = [
   {
-    name: 'Aisyah',
-    role: 'Creative Director',
+    name: 'Muhammad Eko Annur Fajar A',
+    role: 'IoT Developer',
     image:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=80',
+      '/images/masaan.jpg',
   },
   {
-    name: 'Rafi',
-    role: 'Brand Strategist',
+    name: 'Zainur Roziqin',
+    role: 'Business Development',
     image:
-      'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80',
+      '/images/maszain.jpg',
   },
 ]
 
@@ -593,8 +593,9 @@ img {
 .team-card img {
   width: 100%;
   height: 260px;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
+  padding: 12px;
 }
 
 .team-card.featured img {
