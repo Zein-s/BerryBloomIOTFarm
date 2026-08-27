@@ -41,7 +41,7 @@ const metrics = [
     <section class="hero">
       <div class="hero-copy">
         <p class="eyebrow">Website siap ekspor</p>
-        <h1>Bangun brand yang lebih hidup dan lebih dipercaya.</h1>
+        <h1>BerryBloom IoT Farm: Model Pertanian Cerdas  tanaman Herbal  Terpadu Berbasis Internet of Things (IoT) untuk Optimalisasi Budidaya Golden Berry dan Bunga Telang dalam Mendukung Pencapaian Sustainable Development Goals (SDGs)</h1>
         <p class="subtitle">
           Berry Bloom membantu bisnis tumbuh dengan strategi branding, tampilan landing page yang modern,
           dan pengalaman digital yang membuat audiens segera percaya.
@@ -198,6 +198,10 @@ img {
   color: #4d3d39;
   text-decoration: none;
   font-weight: 600;
+  background: #f8f4ec;
+  border: 1px solid #e5d9c8;
+  padding: 8px 16px;
+  border-radius: 8px;
 }
 
 .btn {
@@ -246,10 +250,10 @@ img {
 
 .hero-copy h1 {
   margin: 0;
-  font-size: clamp(2.6rem, 5vw, 4.8rem);
-  line-height: 1.02;
-  letter-spacing: -0.05em;
-  max-width: 600px;
+  font-size: clamp(1.6rem, 3.2vw, 2.6rem);
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+  max-width: 900px;
 }
 
 .subtitle {
