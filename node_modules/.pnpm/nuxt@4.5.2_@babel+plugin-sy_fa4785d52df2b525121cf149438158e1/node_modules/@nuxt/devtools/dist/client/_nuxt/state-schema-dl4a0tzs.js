@@ -1,1 +1,0 @@
-import{g as e}from"./utils-gsui1utc.js";function t(){return e(`schema:input`,null)}export{t};
