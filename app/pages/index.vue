@@ -1,86 +1,78 @@
 <script setup lang="ts">
-import Navbar from '../components/Navbar.vue'
-
 const features = [
   {
-    title: 'Branding yang konsisten',
-    description: 'Buat identitas visual yang kuat dan terlihat profesional di setiap kanal digital.',
+    title: "Branding yang konsisten",
+    description: "Buat identitas visual yang kuat dan terlihat profesional di setiap kanal digital.",
   },
   {
-    title: 'Landing page yang cepat',
-    description: 'Desain dibuat ringan, responsif, dan optimal untuk kecepatan loading di desktop maupun mobile.',
+    title: "Landing page yang cepat",
+    description: "Desain dibuat ringan, responsif, dan optimal untuk kecepatan loading di desktop maupun mobile.",
   },
   {
-    title: 'Siap untuk ekspor',
-    description: 'Struktur halaman dibuat agar mudah dipindah ke proyek lain atau dipublikasikan sebagai landing page statis.',
+    title: "Siap untuk ekspor",
+    description: "Struktur halaman dibuat agar mudah dipindah ke proyek lain atau dipublikasikan sebagai landing page statis.",
   },
-]
+];
 
 const metrics = [
-  { value: '4.9/5', label: 'Rating klien' },
-  { value: '2.4x', label: 'Peningkatan engagement' },
-  { value: '24/7', label: 'Ketersediaan brand' },
-]
+  { value: "4.9/5", label: "Rating klien" },
+  { value: "2.4x", label: "Peningkatan engagement" },
+  { value: "24/7", label: "Ketersediaan brand" },
+];
 
 const testimonials = [
   {
-    name: 'Nadia',
-    role: 'Owner Brand',
-    quote: 'Desain yang terasa premium dan mudah dicerna. Brand kami langsung lebih dipercaya setelah landing page baru dibuat.',
+    name: "Nadia",
+    role: "Owner Brand",
+    quote: "Desain yang terasa premium dan mudah dicerna. Brand kami langsung lebih dipercaya setelah landing page baru dibuat.",
   },
   {
-    name: 'Rizky',
-    role: 'Founder Startup',
-    quote: 'Prosesnya cepat, hasilnya rapi, dan benar-benar membantu conversion. Kami merasa lebih siap untuk scale.',
+    name: "Rizky",
+    role: "Founder Startup",
+    quote: "Prosesnya cepat, hasilnya rapi, dan benar-benar membantu conversion. Kami merasa lebih siap untuk scale.",
   },
   {
-    name: 'Salsa',
-    role: 'Marketing Lead',
-    quote: 'Semua elemen terasa konsisten. Tim kami lebih mudah menjelaskan value proposition dengan tampilan yang kuat.',
+    name: "Salsa",
+    role: "Marketing Lead",
+    quote: "Semua elemen terasa konsisten. Tim kami lebih mudah menjelaskan value proposition dengan tampilan yang kuat.",
   },
-]
+];
 
-const team = [
+const teams = [
   {
-    name: 'Muhammad Eko Annur Fajar A',
-    role: 'IoT Developer',
-    image:
-      '/images/masaan.jpg',
+    name: "Muhammad Eko Annur Fajar A",
+    role: "IoT Developer",
+    image: "/images/masaan.jpg",
   },
   {
-    name: 'Zainur Roziqin',
-    role: 'Business Development',
-    image:
-      '/images/maszain.jpg',
+    name: "Zainur Roziqin",
+    role: "Business Development",
+    image: "/images/maszain.jpg",
   },
-]
+];
 
 const products = [
-  { name: 'Botanical Serum', tag: 'Skincare', image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80' },
-  { name: 'Glow Lotion', tag: 'Hydration', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=800&q=80' },
-  { name: 'Rose Mist', tag: 'Mist', image: 'https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=800&q=80' },
-  { name: 'Herbal Cleanser', tag: 'Cleanser', image: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80' },
-  { name: 'Night Cream', tag: 'Night Care', image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80' },
-  { name: 'Sunscreen', tag: 'Sun Protection', image: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80' },
-  { name: 'Body Oil', tag: 'Body Care', image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80' },
-  { name: 'Hair Tonic', tag: 'Hair Care', image: 'https://images.unsplash.com/photo-1526045478516-99145907023c?auto=format&fit=crop&w=800&q=80' },
-  { name: 'Essence Water', tag: 'Essence', image: 'https://images.unsplash.com/photo-1528740561666-dc2479dc08ab?auto=format&fit=crop&w=800&q=80' },
-  { name: 'Recovery Mask', tag: 'Mask', image: 'https://images.unsplash.com/photo-1556228720-6d0d6f0e783b?auto=format&fit=crop&w=800&q=80' },
-]
+  { name: "Botanical Serum", tag: "Skincare", image: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80" },
+  { name: "Glow Lotion", tag: "Hydration", image: "https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=800&q=80" },
+  { name: "Rose Mist", tag: "Mist", image: "https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=800&q=80" },
+  { name: "Herbal Cleanser", tag: "Cleanser", image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=800&q=80" },
+  { name: "Night Cream", tag: "Night Care", image: "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80" },
+  { name: "Sunscreen", tag: "Sun Protection", image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=800&q=80" },
+  { name: "Body Oil", tag: "Body Care", image: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80" },
+  { name: "Hair Tonic", tag: "Hair Care", image: "https://images.unsplash.com/photo-1526045478516-99145907023c?auto=format&fit=crop&w=800&q=80" },
+  { name: "Essence Water", tag: "Essence", image: "https://images.unsplash.com/photo-1528740561666-dc2479dc08ab?auto=format&fit=crop&w=800&q=80" },
+  { name: "Recovery Mask", tag: "Mask", image: "https://images.unsplash.com/photo-1556228720-6d0d6f0e783b?auto=format&fit=crop&w=800&q=80" },
+];
 </script>
 
 <template>
   <main class="page-shell">
-
     <Navbar />
     <section class="hero">
       <div class="hero-copy">
         <p class="eyebrow">Website siap ekspor</p>
-        <h1>BerryBloom IoT Farm: Model Pertanian Cerdas  tanaman Herbal  Terpadu Berbasis Internet of Things (IoT) untuk Optimalisasi Budidaya Golden Berry dan Bunga Telang dalam Mendukung Pencapaian Sustainable Development Goals (SDGs)</h1>
-        <p class="subtitle">
-          Berry Bloom membantu bisnis tumbuh dengan strategi branding, tampilan landing page yang modern,
-          dan pengalaman digital yang membuat audiens segera percaya.
-        </p>
+        <h1>BerryBloom IoT Farm: Model Pertanian Cerdas tanaman Herbal Terpadu Berbasis Internet of Things (IoT) untuk Optimalisasi Budidaya Golden Berry dan Bunga Telang dalam Mendukung Pencapaian Sustainable Development Goals (SDGs)</h1>
+        <p class="subtitle">Berry Bloom membantu bisnis tumbuh dengan strategi branding, tampilan landing page yang modern, dan pengalaman digital yang membuat audiens segera percaya.</p>
 
         <div class="cta-row">
           <NuxtLink to="/contact" class="btn btn-primary">Jadwalkan konsultasi</NuxtLink>
@@ -132,16 +124,13 @@ const products = [
     </section>
 
     <section id="about" class="about">
-      <div class="about-copy">
+      <div class="section-heading">
         <p class="eyebrow">Tentang Berry Bloom</p>
         <h2>Branding yang terasa premium dan jauh lebih mudah dicerna audiens.</h2>
       </div>
 
       <div class="about-panel">
-        <p>
-          Kami menggabungkan strategi visual, storytelling, dan pengalaman pengguna agar tiap halaman mampu
-          menonjembatani bisnis dengan target audiens dengan cara yang lebih elegan dan efektif.
-        </p>
+        <p>Kami menggabungkan strategi visual, storytelling, dan pengalaman pengguna agar tiap halaman mampu menonjembatani bisnis dengan target audiens dengan cara yang lebih elegan dan efektif.</p>
       </div>
     </section>
 
@@ -152,31 +141,28 @@ const products = [
       </div>
 
       <div class="team-layout">
-        <article class="team-card featured">
-          <img :src="team[0].image" :alt="team[0].name" />
+        <article class="team-card featured" v-for="team in teams" :key="team.name">
+          <img :src="team.image" :alt="team.name" />
           <div class="team-info">
-            <strong>{{ team[0].name }}</strong>
-            <span>{{ team[0].role }}</span>
+            <strong>{{ team.name }}</strong>
+            <span>{{ team.role }}</span>
           </div>
         </article>
 
-        <article v-for="member in team.slice(1)" :key="member.name" class="team-card">
+        <!-- <article v-for="member in team.slice(1)" :key="member.name" class="team-card">
           <img :src="member.image" :alt="member.name" />
           <div class="team-info">
             <strong>{{ member.name }}</strong>
             <span>{{ member.role }}</span>
           </div>
-        </article>
+        </article> -->
       </div>
     </section>
 
     <section class="product-showcase-section">
-      <div class="section-heading product-header">
-        <div>
-          <p class="eyebrow">Produk kami</p>
-          <h2>10 produk yang siap menghadirkan nilai lebih untuk pelanggan.</h2>
-        </div>
-        <NuxtLink to="/products" class="btn btn-secondary">Lihat semua</NuxtLink>
+      <div class="section-heading">
+        <p class="eyebrow">Produk kami</p>
+        <h2>10 produk yang siap menghadirkan nilai lebih untuk pelanggan.</h2>
       </div>
 
       <div class="product-grid">
@@ -188,6 +174,7 @@ const products = [
           </div>
         </article>
       </div>
+      <NuxtLink to="/products" class="btn-secondary center">Lihat semua</NuxtLink>
     </section>
 
     <section class="testimonials">
@@ -235,21 +222,6 @@ const products = [
 </template>
 
 <style scoped>
-:global(html) {
-  scroll-behavior: smooth;
-}
-
-:global(body) {
-  margin: 0;
-  font-family: 'Inter', 'Segoe UI', sans-serif;
-  background: #f3faf5;
-  color: #123127;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 img {
   max-width: 100%;
   display: block;
@@ -261,13 +233,13 @@ img {
   padding: 24px 20px 80px;
 }
 
-.topbar,
 .hero,
 .features,
-.about,
 .cta-panel {
-  width: min(100%, 1120px);
-  margin: 0 auto;
+  /* width: min(100%, 1120px);
+  margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
 }
 
 .topbar {
@@ -311,14 +283,16 @@ img {
 }
 
 .btn {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: 14px 22px;
   border-radius: 999px;
   text-decoration: none;
   font-weight: 700;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .btn:hover {
@@ -335,6 +309,21 @@ img {
   background: rgba(255, 255, 255, 0.7);
   color: #123127;
   border: 1px solid rgba(20, 96, 72, 0.12);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: 10px auto 0;
+  padding: 14px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .hero {
@@ -459,7 +448,7 @@ img {
 }
 
 .product::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 18px 18px auto auto;
   width: 90px;
@@ -508,7 +497,12 @@ img {
 }
 
 .section-heading {
-  max-width: 620px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+  /* max-width: 620px; */
   margin-bottom: 28px;
 }
 
@@ -563,8 +557,9 @@ img {
 }
 
 .team-layout {
-  display: grid;
-  grid-template-columns: 1.3fr 1fr 1fr;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 22px;
   margin-top: 18px;
 }
@@ -581,7 +576,7 @@ img {
   width: 100%;
   height: 260px;
   object-fit: contain;
-  display: block;
+  /* display: block; */
   padding: 12px;
 }
 
@@ -788,6 +783,22 @@ img {
 
   .team-layout {
     grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .section-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section-heading h2 {
+    text-align: center;
+  }
+
+  .about-panel {
+    text-align: justify;
   }
 
   .product-grid {
