@@ -96,60 +96,26 @@
 .nav-menu a:focus::after {
   width: 100%;
 }
-</style>
 
-<!-- <template>
-  <nav class="navbar">
-    <div class="navbar-container">
-  
-      <NuxtLink to="/" class="logo"> My Website </NuxtLink>
-      <div class="nav-menu">
-        <NuxtLink to="/">Home</NuxtLink>
-        <NuxtLink to="/about">About</NuxtLink>
-        <NuxtLink to="/services">Services</NuxtLink>
-        <NuxtLink to="/pricing">Pricing</NuxtLink>
-        <NuxtLink to="/contact">Contact</NuxtLink>
-      </div>
-    </div>
-  </nav>
-</template>
 
-<style scoped>
-.navbar {
-  width: 100%;
-  background: white;
-  border-bottom: 1px solid #eee;
-}
-
-.navbar-container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 16px 24px;
-
-  display: flex;
+.btn {
+  display: inline-flex;
   align-items: center;
-  justify-content: space-between;
-}
-
-.logo {
-  font-size: 22px;
+  justify-content: center;
+  padding: 14px 22px;
+  border-radius: 999px;
+  text-decoration: none;
   font-weight: 700;
-  text-decoration: none;
-  color: #111;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.nav-menu {
-  display: flex;
-  gap: 24px;
+.btn:hover {
+  transform: translateY(-1px);
 }
 
-.nav-menu a {
-  color: #555;
-  text-decoration: none;
+.btn-primary {
+  background: linear-gradient(135deg, #18b57d, #0f8b63);
+  color: #fff;
+  box-shadow: 0 18px 35px rgba(15, 139, 99, 0.22);
 }
-
-.nav-menu a.router-link-active {
-  color: #000;
-  font-weight: 600;
-}
-</style> -->
+</style>

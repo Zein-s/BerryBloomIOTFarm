@@ -356,7 +356,7 @@ img {
 
 .hero-copy h1 {
   margin: 0;
-  font-size: clamp(1.6rem, 3.2vw, 2.6rem);
+  font-size: clamp(1.2rem, 2.2vw, 2rem);
   line-height: 1.3;
   letter-spacing: -0.02em;
   max-width: 900px;
