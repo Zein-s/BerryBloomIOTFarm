@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import Navbar from '../components/Navbar.vue'
+
 const features = [
   {
     title: 'Branding yang konsisten',
@@ -69,23 +71,8 @@ const products = [
 
 <template>
   <main class="page-shell">
-    <header class="topbar">
-      <div class="brand-wrap">
-        <div class="brand-mark">B</div>
-        <span>Berry Bloom</span>
-      </div>
 
-      <nav class="nav">
-        <NuxtLink to="/">Home</NuxtLink>
-        <NuxtLink to="/about">About</NuxtLink>
-        <NuxtLink to="/services">Services</NuxtLink>
-        <NuxtLink to="/pricing">Pricing</NuxtLink>
-        <NuxtLink to="/contact">Kontak</NuxtLink>
-      </nav>
-
-      <NuxtLink to="/contact" class="btn btn-primary">Mulai proyek</NuxtLink>
-    </header>
-
+    <Navbar />
     <section class="hero">
       <div class="hero-copy">
         <p class="eyebrow">Website siap ekspor</p>

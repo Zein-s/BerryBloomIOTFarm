@@ -1,44 +1,30 @@
 <script setup lang="ts">
+import Navbar from "../components/Navbar.vue";
 const plans = [
   {
-    name: 'Starter',
-    price: 'Rp1.5jt',
-    features: ['Brand audit', 'Landing page satu halaman', 'Desain visual dasar'],
+    name: "Starter",
+    price: "Rp1.5jt",
+    features: ["Brand audit", "Landing page satu halaman", "Desain visual dasar"],
     highlight: false,
   },
   {
-    name: 'Growth',
-    price: 'Rp3.5jt',
-    features: ['Brand identity lengkap', 'Landing page premium', 'Copywriting ringan'],
+    name: "Growth",
+    price: "Rp3.5jt",
+    features: ["Brand identity lengkap", "Landing page premium", "Copywriting ringan"],
     highlight: true,
   },
   {
-    name: 'Scale',
-    price: 'Rp6jt',
-    features: ['Strategy marketing', 'Campaign creative', 'Support konsultasi rutin'],
+    name: "Scale",
+    price: "Rp6jt",
+    features: ["Strategy marketing", "Campaign creative", "Support konsultasi rutin"],
     highlight: false,
   },
-]
+];
 </script>
 
 <template>
   <main class="page-shell">
-    <header class="topbar">
-      <NuxtLink to="/" class="brand-wrap">
-        <div class="brand-mark">B</div>
-        <span>Berry Bloom</span>
-      </NuxtLink>
-
-      <nav class="nav">
-        <NuxtLink to="/">Home</NuxtLink>
-        <NuxtLink to="/about">About</NuxtLink>
-        <NuxtLink to="/services">Services</NuxtLink>
-        <NuxtLink to="/pricing">Pricing</NuxtLink>
-        <NuxtLink to="/contact">Kontak</NuxtLink>
-      </nav>
-
-      <NuxtLink to="/contact" class="btn btn-primary">Mulai proyek</NuxtLink>
-    </header>
+    <Navbar />
 
     <section class="hero-card">
       <p class="eyebrow">Pricing</p>
@@ -61,12 +47,14 @@ const plans = [
 <style scoped>
 :global(body) {
   margin: 0;
-  font-family: 'Inter', 'Segoe UI', sans-serif;
+  font-family: "Inter", "Segoe UI", sans-serif;
   background: #f3faf5;
   color: #123127;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 .page-shell {
   max-width: 1100px;

@@ -23,21 +23,6 @@ const metrics = [
 
 <template>
   <main class="page-shell">
-    <header class="topbar">
-      <div class="brand-wrap">
-        <div class="brand-mark">B</div>
-        <span>Berry Bloom</span>
-      </div>
-
-      <nav class="nav">
-        <a href="#features">Fitur</a>
-        <a href="#about">Tentang</a>
-        <a href="#contact">Kontak</a>
-      </nav>
-
-      <a href="#contact" class="btn btn-primary">Mulai proyek</a>
-    </header>
-
     <section class="hero">
       <div class="hero-copy">
         <p class="eyebrow">Website siap ekspor</p>

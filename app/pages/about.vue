@@ -1,37 +1,15 @@
 <script setup lang="ts">
-const values = [
-  'Branding yang konsisten dari awal sampai akhir funnel.',
-  'Desain premium yang mudah dipahami audiens.',
-  'Proses kerja yang jelas, cepat, dan terstruktur.',
-]
+import Navbar from "../components/Navbar.vue";
+const values = ["Branding yang konsisten dari awal sampai akhir funnel.", "Desain premium yang mudah dipahami audiens.", "Proses kerja yang jelas, cepat, dan terstruktur."];
 </script>
 
 <template>
   <main class="page-shell">
-    <header class="topbar">
-      <NuxtLink to="/" class="brand-wrap">
-        <div class="brand-mark">B</div>
-        <span>Berry Bloom</span>
-      </NuxtLink>
-
-      <nav class="nav">
-        <NuxtLink to="/">Home</NuxtLink>
-        <NuxtLink to="/about">About</NuxtLink>
-        <NuxtLink to="/services">Services</NuxtLink>
-        <NuxtLink to="/pricing">Pricing</NuxtLink>
-        <NuxtLink to="/contact">Kontak</NuxtLink>
-      </nav>
-
-      <NuxtLink to="/contact" class="btn btn-primary">Mulai proyek</NuxtLink>
-    </header>
-
+    <Navbar />
     <section class="hero-card">
       <p class="eyebrow">Tentang kami</p>
       <h1>Branding yang terasa premium, sekaligus mudah dipahami.</h1>
-      <p class="subtitle">
-        Berry Bloom hadir untuk membantu brand tumbuh lewat visual yang lebih kuat, strategi yang lebih tajam,
-        dan pengalaman digital yang membuat bisnis lebih dipercaya pelanggan.
-      </p>
+      <p class="subtitle">Berry Bloom hadir untuk membantu brand tumbuh lewat visual yang lebih kuat, strategi yang lebih tajam, dan pengalaman digital yang membuat bisnis lebih dipercaya pelanggan.</p>
 
       <div class="value-grid">
         <div v-for="item in values" :key="item" class="value-card">
@@ -46,12 +24,14 @@ const values = [
 <style scoped>
 :global(body) {
   margin: 0;
-  font-family: 'Inter', 'Segoe UI', sans-serif;
+  font-family: "Inter", "Segoe UI", sans-serif;
   background: #f3faf5;
   color: #123127;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 .page-shell {
   max-width: 1100px;

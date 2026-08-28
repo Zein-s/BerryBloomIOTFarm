@@ -1,36 +1,20 @@
 <script setup lang="ts">
+import Navbar from "../components/Navbar.vue";
 const contactItems = [
-  { label: 'Email', value: 'hello@berrybloom.id', href: 'mailto:hello@berrybloom.id' },
-  { label: 'Instagram', value: '@berrybloom', href: 'https://instagram.com' },
-  { label: 'WhatsApp', value: '+62 812-3456-7890', href: 'https://wa.me/6281234567890' },
-]
+  { label: "Email", value: "hello@berrybloom.id", href: "mailto:hello@berrybloom.id" },
+  { label: "Instagram", value: "@berrybloom", href: "https://instagram.com" },
+  { label: "WhatsApp", value: "+62 812-3456-7890", href: "https://wa.me/6281234567890" },
+];
 </script>
 
 <template>
   <main class="contact-page">
-    <header class="topbar">
-      <NuxtLink to="/" class="brand-wrap">
-        <div class="brand-mark">B</div>
-        <span>Berry Bloom</span>
-      </NuxtLink>
-
-      <nav class="nav">
-        <NuxtLink to="/">Home</NuxtLink>
-        <NuxtLink to="/about">About</NuxtLink>
-        <NuxtLink to="/services">Services</NuxtLink>
-        <NuxtLink to="/pricing">Pricing</NuxtLink>
-        <NuxtLink to="/contact">Kontak</NuxtLink>
-      </nav>
-
-      <NuxtLink to="/contact" class="btn btn-primary">Mulai proyek</NuxtLink>
-    </header>
+    <Navbar />
 
     <section class="hero-card">
       <p class="eyebrow">Hubungi kami</p>
       <h1>Siap ekspansi brand Anda ke level berikutnya?</h1>
-      <p class="subtitle">
-        Mari diskusikan kebutuhan branding, landing page, dan strategi digital yang cocok untuk bisnis Anda.
-      </p>
+      <p class="subtitle">Mari diskusikan kebutuhan branding, landing page, dan strategi digital yang cocok untuk bisnis Anda.</p>
 
       <div class="contact-list">
         <a v-for="item in contactItems" :key="item.label" :href="item.href" target="_blank" rel="noopener" class="contact-item">
@@ -45,7 +29,7 @@ const contactItems = [
 <style scoped>
 :global(body) {
   margin: 0;
-  font-family: 'Inter', 'Segoe UI', sans-serif;
+  font-family: "Inter", "Segoe UI", sans-serif;
   background: #f3faf5;
   color: #123127;
 }
