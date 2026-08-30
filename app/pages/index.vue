@@ -14,12 +14,6 @@ const features = [
   },
 ];
 
-const metrics = [
-  { value: "4.9/5", label: "Rating klien" },
-  { value: "2.4x", label: "Peningkatan engagement" },
-  { value: "24/7", label: "Ketersediaan brand" },
-];
-
 const testimonials = [
   {
     name: "Nadia",
@@ -70,10 +64,9 @@ const products = [
     <Navbar />
     <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">Website siap ekspor</p>
-        <h1>BerryBloom IoT Farm: Model Pertanian Cerdas tanaman Herbal Terpadu Berbasis Internet of Things (IoT) untuk Optimalisasi Budidaya Golden Berry dan Bunga Telang dalam Mendukung Pencapaian Sustainable Development Goals (SDGs)</h1>
-        <p class="subtitle">Berry Bloom membantu bisnis tumbuh dengan strategi branding, tampilan landing page yang modern, dan pengalaman digital yang membuat audiens segera percaya.</p>
-
+       <p class="eyebrow" style="display: block; width: 100%; text-align: center;">WEBSITE SIAP EKSPOR</p>
+       <h1>INSPIRASI TANPA BATAS</h1>
+        <h2>Pertanian Cerdas IoT untuk Budidaya Golden Berry & Bunga Telang</h2>
         <div class="cta-row">
           <NuxtLink to="/contact" class="btn btn-primary">Jadwalkan konsultasi</NuxtLink>
           <NuxtLink to="#features" class="btn btn-secondary">Lihat fitur</NuxtLink>
@@ -88,23 +81,6 @@ const products = [
       </div>
 
       <div class="hero-visual" aria-label="Preview brand showcase">
-        <div class="visual-card main-card">
-          <span class="chip">Campaign</span>
-          <h3>Spring Collection</h3>
-          <div class="product-showcase">
-            <div class="product product-one" />
-            <div class="product product-two" />
-          </div>
-          <div class="mini-row">
-            <span>+18.4%</span>
-            <span>Brand Reach</span>
-          </div>
-        </div>
-        <div class="visual-card floating-card">
-          <p>Conversion</p>
-          <strong>7.8%</strong>
-          <small>+2.1% dibanding bulan lalu</small>
-        </div>
       </div>
     </section>
 
