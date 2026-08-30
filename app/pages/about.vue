@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import Navbar from "../components/Navbar.vue";
+useHead({
+  title: "About",
+});
 const values = ["Branding yang konsisten dari awal sampai akhir funnel.", "Desain premium yang mudah dipahami audiens.", "Proses kerja yang jelas, cepat, dan terstruktur."];
 </script>
 
@@ -27,10 +29,6 @@ const values = ["Branding yang konsisten dari awal sampai akhir funnel.", "Desai
   font-family: "Inter", "Segoe UI", sans-serif;
   background: #f3faf5;
   color: #123127;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .page-shell {

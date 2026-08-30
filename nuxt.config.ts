@@ -1,12 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
+  compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
   ssr: true,
   nitro: {
     prerender: {
-      routes: ['/', '/about', '/services', '/pricing', '/contact', '/products', '/landingpage'],
-      crawlLinks: false
-    }
-  }
-})
+      routes: ["/", "/about", "/services", "/pricing", "/contact", "/products", "/landingpage"],
+      crawlLinks: false,
+    },
+  },
+  app: {
+    head: {
+      title: "Berry Bloom",
+      titleTemplate: "%s | Berry Bloom",
+    },
+  },
+});

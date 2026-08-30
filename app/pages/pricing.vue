@@ -1,4 +1,7 @@
 <script setup lang="ts">
+useHead({
+  title: "Pricing",
+});
 const plans = [
   {
     name: "Starter",

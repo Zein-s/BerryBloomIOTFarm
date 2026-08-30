@@ -1,24 +1,26 @@
 <script setup lang="ts">
-import Navbar from '../components/Navbar.vue'
+useHead({
+  title: "Services",
+});
 const services = [
   {
-    title: 'Brand Identity',
-    text: 'Membuat identitas visual yang konsisten mulai dari logo, warna, hingga tone komunikasi brand.',
+    title: "Brand Identity",
+    text: "Membuat identitas visual yang konsisten mulai dari logo, warna, hingga tone komunikasi brand.",
   },
   {
-    title: 'Landing Page',
-    text: 'Desain landing page yang fokus pada konversi, storytelling, dan pengalaman pengguna yang jelas.',
+    title: "Landing Page",
+    text: "Desain landing page yang fokus pada konversi, storytelling, dan pengalaman pengguna yang jelas.",
   },
   {
-    title: 'Marketing Creative',
-    text: 'Siapkan materi promosi, konten visual, dan strategi campaign yang siap dipakai di berbagai channel.',
+    title: "Marketing Creative",
+    text: "Siapkan materi promosi, konten visual, dan strategi campaign yang siap dipakai di berbagai channel.",
   },
-]
+];
 </script>
 
 <template>
   <main class="page-shell">
-   <Navbar/>
+    <Navbar />
 
     <section class="hero-card">
       <p class="eyebrow">Layanan</p>
@@ -38,12 +40,14 @@ const services = [
 <style scoped>
 :global(body) {
   margin: 0;
-  font-family: 'Inter', 'Segoe UI', sans-serif;
+  font-family: "Inter", "Segoe UI", sans-serif;
   background: #f3faf5;
   color: #123127;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 .page-shell {
   max-width: 1100px;

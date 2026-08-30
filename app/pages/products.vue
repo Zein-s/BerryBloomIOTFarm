@@ -1,4 +1,7 @@
 <script setup lang="ts">
+useHead({
+  title: "Products",
+});
 const products = [
   { name: 'Botanical Serum', tag: 'Skincare', image: 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=80' },
   { name: 'Glow Lotion', tag: 'Hydration', image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=800&q=80' },

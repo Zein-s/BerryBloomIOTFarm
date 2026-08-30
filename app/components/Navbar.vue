@@ -1,4 +1,3 @@
-```vue
 <template>
   <header class="topbar">
     <!-- Brand -->
@@ -17,7 +16,7 @@
     </nav>
 
     <!-- Desktop CTA -->
-    <a href="#contact" class="btn btn-primary desktop-cta"> Mulai proyek </a>
+    <NuxtLink to="/contact" class="btn btn-primary desktop-cta"> Mulai proyek </NuxtLink>
 
     <!-- Hamburger Mobile -->
     <button class="hamburger" type="button" aria-label="Open navigation" :aria-expanded="isMenuOpen" @click="isMenuOpen = true">
@@ -61,7 +60,7 @@
     </nav>
 
     <!-- Mobile CTA -->
-    <a href="/contact" class="btn btn-primary mobile-cta" @click="isMenuOpen = false"> Mulai proyek </a>
+    <NuxtLink to="/contact" class="btn btn-primary mobile-cta" @click="isMenuOpen = false"> Mulai proyek </NuxtLink>
   </aside>
 </template>
 
@@ -83,9 +82,7 @@ const isMenuOpen = ref(false);
   padding: 20px 0 28px;
 }
 
-/* ========================================
-   BRAND
-======================================== */
+/* BRAND */
 
 .brand-wrap {
   display: inline-flex;
@@ -115,9 +112,7 @@ const isMenuOpen = ref(false);
   box-shadow: 0 12px 24px rgba(16, 143, 96, 0.25);
 }
 
-/* ========================================
-   DESKTOP NAVIGATION
-======================================== */
+/* DESKTOP NAVIGATION */
 
 .nav-menu {
   display: flex;
@@ -184,9 +179,7 @@ const isMenuOpen = ref(false);
   width: 100%;
 }
 
-/* ========================================
-   BUTTON
-======================================== */
+/* BUTTON */
 
 .btn {
   display: inline-flex;
@@ -218,9 +211,7 @@ const isMenuOpen = ref(false);
   box-shadow: 0 18px 35px rgba(15, 139, 99, 0.22);
 }
 
-/* ========================================
-   HAMBURGER
-======================================== */
+/* HAMBURGER */
 
 .hamburger {
   display: none;
@@ -264,9 +255,7 @@ const isMenuOpen = ref(false);
   transition: width 0.2s ease;
 }
 
-/* ========================================
-   MOBILE MENU
-======================================== */
+/* MOBILE MENU */
 
 .mobile-menu {
   position: fixed;
@@ -298,9 +287,7 @@ const isMenuOpen = ref(false);
   transform: translateX(0);
 }
 
-/* ========================================
-   CLOSE BUTTON
-======================================== */
+/* CLOSE BUTTON */
 
 .menu-close {
   position: absolute;
@@ -353,18 +340,14 @@ const isMenuOpen = ref(false);
   transform: rotate(-45deg);
 }
 
-/* ========================================
-   MOBILE MENU HEADER
-======================================== */
+/* MOBILE MENU HEADER */
 
 .mobile-menu-header {
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-/* ========================================
-   MOBILE NAV
-======================================== */
+/* MOBILE NAV */
 
 .mobile-nav {
   display: flex;
@@ -408,9 +391,7 @@ align-items: center;
   padding-left: 18px;
 }
 
-/* ========================================
-   MOBILE CTA
-======================================== */
+/* MOBILE CTA */
 
 .mobile-cta {
   width: 100%;
@@ -418,9 +399,7 @@ align-items: center;
   margin-top: auto;
 }
 
-/* ========================================
-   OVERLAY
-======================================== */
+/* OVERLAY */
 
 .menu-overlay {
   position: fixed;
@@ -434,9 +413,7 @@ align-items: center;
   backdrop-filter: blur(2px);
 }
 
-/* ========================================
-   OVERLAY ANIMATION
-======================================== */
+/* OVERLAY ANIMATION */
 
 .overlay-enter-active,
 .overlay-leave-active {
@@ -448,9 +425,7 @@ align-items: center;
   opacity: 0;
 }
 
-/* ========================================
-   RESPONSIVE
-======================================== */
+/* RESPONSIVE */
 
 @media (max-width: 768px) {
   .topbar {
@@ -467,9 +442,7 @@ align-items: center;
   }
 }
 
-/* ========================================
-   SMALL MOBILE
-======================================== */
+/* SMALL MOBILE */
 
 @media (max-width: 400px) {
   .brand-wrap span {

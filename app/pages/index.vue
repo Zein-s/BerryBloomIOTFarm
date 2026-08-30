@@ -1,4 +1,8 @@
 <script setup lang="ts">
+useHead({
+  title: "Home",
+});
+
 const features = [
   {
     title: "Branding yang konsisten",
@@ -194,9 +198,12 @@ img {
 }
 
 .page-shell {
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 24px 20px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
 }
 
 .hero,
@@ -297,7 +304,7 @@ img {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  margin: 150px 0;
+  margin: 75px 0;
   /* padding: 40px 0 56px; */
   /* height: 100vh; */
 }
@@ -706,6 +713,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: row;
   gap: 20px;
   margin-top: 28px;
   padding-top: 22px;
@@ -796,6 +804,13 @@ img {
   .site-footer {
     text-align: center;
     display: grid;
+  }
+
+  .site-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
 
   .footer-links {

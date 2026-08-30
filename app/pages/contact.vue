@@ -1,4 +1,7 @@
 <script setup lang="ts">
+useHead({
+  title: "Contact",
+});
 const contactItems = [
   {
     label: "Email",
