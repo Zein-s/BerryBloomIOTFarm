@@ -797,6 +797,16 @@ img {
     text-align: center;
   }
 
+  .stats {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .stat-card {
+    width: 100%;
+    text-align: center;
+  }
+
   .about-panel {
     text-align: justify;
   }
