@@ -64,23 +64,13 @@ const products = [
     <Navbar />
     <section class="hero">
       <div class="hero-copy">
-       <p class="eyebrow" style="display: block; width: 100%; text-align: center;">WEBSITE SIAP EKSPOR</p>
-       <h1>INSPIRASI TANPA BATAS</h1>
+        <p class="eyebrow" style="display: block; width: 100%; text-align: center">WEBSITE SIAP EKSPOR</p>
+        <h1>INSPIRASI TANPA BATAS</h1>
         <h2>Pertanian Cerdas IoT untuk Budidaya Golden Berry & Bunga Telang</h2>
         <div class="cta-row">
           <NuxtLink to="/contact" class="btn btn-primary">Jadwalkan konsultasi</NuxtLink>
           <NuxtLink to="#features" class="btn btn-secondary">Lihat fitur</NuxtLink>
         </div>
-
-        <div class="stats">
-          <div v-for="item in metrics" :key="item.label" class="stat-card">
-            <strong>{{ item.value }}</strong>
-            <span>{{ item.label }}</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="hero-visual" aria-label="Preview brand showcase">
       </div>
     </section>
 
@@ -303,11 +293,13 @@ img {
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  display: flex;
+  justify-content: center;
   align-items: center;
   gap: 40px;
-  padding: 40px 0 56px;
+  margin: 150px 0;
+  /* padding: 40px 0 56px; */
+  /* height: 100vh; */
 }
 
 .eyebrow {
@@ -319,9 +311,17 @@ img {
   color: #1a9b73;
 }
 
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .hero-copy h1 {
   margin: 0;
-  font-size: clamp(1.2rem, 2.2vw, 2rem);
+  font-size: clamp(1.8rem, 2.8vw, 3.2rem);
   line-height: 1.3;
   letter-spacing: -0.02em;
   max-width: 900px;
@@ -750,6 +750,7 @@ img {
 
   .hero {
     padding-top: 10px;
+    margin: 35px 0;
   }
 
   .feature-grid,
