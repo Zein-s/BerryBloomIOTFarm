@@ -1,9 +1,20 @@
 <script setup lang="ts">
-import Navbar from "../components/Navbar.vue";
 const contactItems = [
-  { label: "Email", value: "hello@berrybloom.id", href: "mailto:hello@berrybloom.id" },
-  { label: "Instagram", value: "@berrybloom", href: "https://instagram.com" },
-  { label: "WhatsApp", value: "+62 812-3456-7890", href: "https://wa.me/6281234567890" },
+  {
+    label: "Email",
+    value: "hello@berrybloom.id",
+    href: "mailto:hello@berrybloom.id",
+  },
+  {
+    label: "Instagram",
+    value: "@berrybloom",
+    href: "https://instagram.com/berrybloom",
+  },
+  {
+    label: "WhatsApp",
+    value: "+6281914795701",
+    href: "https://wa.me/6281914795701?text=Halo%20Berry%20Bloom%2C%20saya%20ingin%20berdiskusi%20mengenai%20kebutuhan%20branding%2C%20landing%20page%2C%20dan%20strategi%20digital%20untuk%20bisnis%20saya.",
+  },
 ];
 </script>
 
@@ -13,7 +24,9 @@ const contactItems = [
 
     <section class="hero-card">
       <p class="eyebrow">Hubungi kami</p>
+
       <h1>Siap ekspansi brand Anda ke level berikutnya?</h1>
+
       <p class="subtitle">Mari diskusikan kebutuhan branding, landing page, dan strategi digital yang cocok untuk bisnis Anda.</p>
 
       <div class="contact-list">

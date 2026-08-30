@@ -61,7 +61,7 @@
     </nav>
 
     <!-- Mobile CTA -->
-    <a href="#contact" class="btn btn-primary mobile-cta" @click="isMenuOpen = false"> Mulai proyek </a>
+    <a href="/contact" class="btn btn-primary mobile-cta" @click="isMenuOpen = false"> Mulai proyek </a>
   </aside>
 </template>
 
